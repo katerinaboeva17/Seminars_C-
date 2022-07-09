@@ -135,6 +135,58 @@
 // 3 -> 11
 // 2 -> 10
 
+
+// int ConvertDecBin(int number)
+// {
+//     int binNum = 0;
+//     int count = 0;
+//     while (number >= 1)
+//     {
+//         if (count == 0) count = 1;
+//         else count = count * 10;
+//         binNum = binNum + (number % 2) * count;
+//         number = number / 2;
+//     }
+//     return binNum;
+// }
+// Console.WriteLine("Please enter positive number:");
+// int decNum = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(decNum + " -> " + ConvertDecBin(decNum));
+
+// string number = "3";
+// int fromBase = 10;
+// int toBase = 2;
+// string binNum = Convert.ToString(Convert.ToInt32(number, fromBase), toBase);
+// Console.WriteLine(binNum);
+
+// 3. Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+// void CrossingPoint (double k1, double b1, double k2, double b2)
+// {
+//     if (k1 == k2 && b1 == b2)
+//     Console.WriteLine("Straight lines match");
+
+//     else if (k1 == k2)
+//     Console.WriteLine("Straight lines are parallel");
+
+//     else
+//     {
+//         double x = Math.Round ((b2 - b1) / (k1 - k2), 1);
+//         double y = Math.Round((k1 * x + b1), 1);
+//         Console.WriteLine($"({x}; {y})");
+//     }
+// }
+// Console.WriteLine("Enter k1:");
+// double k1 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Enter b1:");
+// double b1 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Enter k2:");
+// double k2 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Enter b2:");
+// double b2 = Convert.ToDouble(Console.ReadLine());
+// CrossingPoint(k1, b1, k2, b2);
+
 // 4. Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
 // void ShowArray(int[] array)
 // {
